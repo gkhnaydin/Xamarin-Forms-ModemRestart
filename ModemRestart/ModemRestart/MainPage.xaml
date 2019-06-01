@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ModemRestart"
+             x:Class="ModemRestart.MainPage"
+             BackgroundColor="#BF043055" HeightRequest="50">
+    
+    <ScrollView VerticalOptions="StartAndExpand">
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView HeightRequest="10"/>
+            <Frame BackgroundColor="#BF043055" HasShadow="False">
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <Label Text="İp Seçiniz"   VerticalOptions="Start"></Label>
+                    <Picker x:Name="_PickerIp"  VerticalOptions="StartAndExpand"></Picker>
+                    <Label Text="Modem kullanıcı adı giriniz" VerticalOptions="Start"></Label>
+                    <Entry x:Name="_EntryKullaniciAdi"  VerticalOptions="StartAndExpand"></Entry>
+                    <Label Text="Modem şifresini giriniz" VerticalOptions="Start"></Label>
+                    <Entry x:Name="_EntrySifre"  VerticalOptions="StartAndExpand"></Entry>
+                    <Button x:Name="_ButtonSubmit" Text="Restart" Clicked="_ButtonSubmit_Clicked"></Button>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
